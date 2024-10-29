@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Prototype.Implementations
 {
-    internal class DieselCar : Car
+    public class DieselCar : Car
     {
         public string Fuel { get; set; } = "Дизель";
         public DieselCar(string make, string model, int year) 
