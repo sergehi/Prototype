@@ -40,20 +40,12 @@ internal class Program
         
         // Свойства, зависящие от типа
         if (car is ElectricCar electricCar)
-        {
             Console.WriteLine($"- Батарея: {electricCar.BatteryCapacity} кВтч");
-        }
         else if (car is SportsCar sportsCar)
-        {
             Console.WriteLine($"- Тип бензина: {sportsCar.GasolineType}, Мощность: {sportsCar.HorsePower}");
-        }
         else if (car is GasolineCar gasolineCar)
-        {
             Console.WriteLine($"- Тип бензина: {gasolineCar.GasolineType}");
-        }
         else if (car is DieselCar dieselCar)
-        {
             Console.WriteLine($"- Тип топлива: {dieselCar.Fuel}");
-        }
     }
 }
